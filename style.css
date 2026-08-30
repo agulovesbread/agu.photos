@@ -141,7 +141,219 @@ nav {
 
             
 
-            @media (max-width: 768px) {
+.portfolio {
+    padding: 40px;
+}
+
+                .portfolio > h2 {
+                    text-align: center;
+                    font-size: 46px;
+                    color: #006D77;
+                    margin-top: 20px;
+                    margin-bottom: 50px;
+                }  
+
+                .collections {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 30px;
+
+                    max-width: 1200px;
+                    margin: 0 auto;
+                }
+
+                .collection {
+                    text-decoration: none;
+                    color: #006D77;
+                    text-align: center;
+                }
+
+                .collection img {
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                    border-radius: 20px;
+                    display: block;
+                    transition: transform 0.3s;
+                }
+               
+                .collection:hover img {
+                    transform: scale(1.03);
+                }
+
+                .collection:hover h3 {
+                    color: #E29578;
+                }
+                .collection h3 {
+                    font-size: 26px;
+                    margin: 15px 0 0;
+                }
+
+
+
+
+
+.about {
+    padding: 40px;
+}
+
+                .about > h2 {
+                    text-align: center;
+                    font-size: 46px;
+                    color: #006D77;
+                    margin-top: 20px;
+                    margin-bottom: 50px;
+        }
+                .about-content {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 60px;
+                    color: #006D77;
+                    font-size: 20px;
+        }
+                .about-content img {
+                    width: 350px;
+                    height: 450px;
+                    object-fit: cover;
+                    border-radius: 25px;
+        }
+                .about-text {
+                    max-width: 500px;
+        }
+
+                .about-text h3 {
+                    margin-top: 0;
+                    margin-bottom: 20px;
+                    font-size: 34px;
+                    color: #006D77;
+        }
+
+                .about-text p {
+                    font-size: 20px;
+                    line-height: 1.6;
+                    color: #006D77;
+        }
+
+
+
+.contact {
+    text-align: center;
+    padding: 40px;
+}
+
+                .contact > h2 {
+                    font-size: 46px;
+                    color: #006D77;
+                    margin-top: 20px;
+                    margin-bottom: 50px;
+                }
+
+                .contact-content {
+                    max-width: 600px;
+                    margin: 0 auto;
+                }
+
+                .contact-content h3 {
+                    font-size: 32px;
+                    color: #006D77;
+                    margin-bottom: 15px;
+                }
+
+                .contact-content > p {
+                    font-size: 20px;
+                    color: #006D77;
+                    line-height: 1.6;
+                }
+
+                .contact-info {
+                    margin-top: 40px;
+                }
+
+                .contact-item {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 12px;
+
+                    font-size: 22px;
+                    color: #006D77;
+                }
+
+                .contact-item p {
+                    margin: 10px 0;
+                }
+
+                .contact-item i {
+                    font-size: 26px;
+                }
+
+                .contact-item a {
+                    text-decoration: none;
+                    color: #006D77;
+                }
+
+                .contact-item a:hover {
+                    color: #E29578;
+                }
+
+
+
+.gallery-page {
+    padding: 40px;
+}
+
+                .gallery-page > h2 {
+                    text-align: center;
+                    font-size: 46px;
+                    color: #006D77;
+                    margin-top: 20px;
+                    margin-bottom: 50px;
+                }
+
+                .gallery {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    max-width: 3500px;
+                    margin: 0 auto;
+                    align-items: flex-start;
+                }
+
+                .gallery img {
+                    height: 280px;
+                    width: auto;
+                    display: block;
+                }
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #006D77;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+
+    margin-bottom: 30px;
+}
+
+.back-button:hover {
+    color: #E29578;
+}
+
+           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        @media (max-width: 768px) {
 
     header {
         flex-direction: column;
@@ -202,109 +414,47 @@ nav {
         margin-bottom: 30px;
     }
 
-}
+            .portfolio {
+                padding: 25px;
+            }
 
+            .collections {
+                grid-template-columns: 1fr;
+            }
 
-.about {
-    padding: 40px;
-}
+            .portfolio > h2 {
+                font-size: 36px;
+                margin-bottom: 30px;
+            }
 
-.about > h2 {
-    text-align: center;
-    font-size: 46px;
-    color: #006D77;
-    margin-top: 20px;
-    margin-bottom: 50px;
-}
-        .about-content {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 60px;
-            color: #006D77;
-            font-size: 20px;
-}
-        .about-content img {
-            width: 350px;
-            height: 450px;
-            object-fit: cover;
-            border-radius: 25px;
-}
-        .about-text {
-            max-width: 500px;
-}
+            .collection img {
+                height: 280px;
+            }
 
-        .about-text h3 {
-            margin-top: 0;
-            margin-bottom: 20px;
-            font-size: 34px;
-            color: #006D77;
-}
+    .gallery-page {
+        padding: 25px;
+    }
 
-        .about-text p {
-            font-size: 20px;
-            line-height: 1.6;
-            color: #006D77;
+    .gallery-page > h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+
 }
 
 
 
-.contact {
-    text-align: center;
-    padding: 40px;
-}
 
-        .contact > h2 {
-            font-size: 46px;
-            color: #006D77;
-            margin-top: 20px;
-            margin-bottom: 50px;
-        }
 
-        .contact-content {
-            max-width: 600px;
-            margin: 0 auto;
-        }
 
-        .contact-content h3 {
-            font-size: 32px;
-            color: #006D77;
-            margin-bottom: 15px;
-        }
 
-        .contact-content > p {
-            font-size: 20px;
-            color: #006D77;
-            line-height: 1.6;
-        }
-
-        .contact-info {
-            margin-top: 40px;
-        }
-
-        .contact-item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 12px;
-
-            font-size: 22px;
-            color: #006D77;
-        }
-
-        .contact-item p {
-            margin: 10px 0;
-        }
-
-        .contact-item i {
-            font-size: 26px;
-        }
-
-        .contact-item a {
-            text-decoration: none;
-            color: #006D77;
-        }
-
-        .contact-item a:hover {
-            color: #E29578;
-        }
+                
